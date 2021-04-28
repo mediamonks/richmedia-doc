@@ -18,18 +18,17 @@ navbar-links:
 
   Docs:
     - Richmedia generator: 'generator'
-
     - Getting started: 'getting-started'
-
     - Adjust a banner: 'adjusting-a-banner'
-
     - .richmediarc: 'richmediarc'
-
+      - The content node: 'richmediarc/the-content-node'
+      - Basic .richmediarc concepts: 'richmediarc/basic-concepts'
+      - Advanced .richmediarc concepts: 'richmediarc/advanced-concepts'
+      - Feeds: 'richmediarc/feeds'
     - Richmedia temple server: 'devserver'
+    Posts: ""
 
-   Posts: ""
 
-#
 #     - Learn markdown: "https://www.markdowntutorial.com/"
 #   Author's home: "https://deanattali.com"
 
