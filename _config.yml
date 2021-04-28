@@ -15,16 +15,19 @@ author: Mient-Jan Stelling
 
 navbar-links:
   Home: './index.html'
-#     - Lets get started: "generator"
-  Richmedia generator: 'generator'
-#     - Lets get started: "devserver"
-  Getting started: 'getting-started'
 
-  Adjust a banner: 'adjusting-a-banner'
+  Docs:
+    - Richmedia generator: 'generator'
 
-  .richmediarc: 'richmediarc'
+    - Getting started: 'getting-started'
 
-  Richmedia temple server: 'devserver'
+    - Adjust a banner: 'adjusting-a-banner'
+
+    - .richmediarc: 'richmediarc'
+
+    - Richmedia temple server: 'devserver'
+
+   Posts: ""
 
 #
 #     - Learn markdown: "https://www.markdowntutorial.com/"
@@ -195,7 +198,7 @@ date_format: "%B %-d, %Y"
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "Netherlands/Amsterdam"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title.html
@@ -209,19 +212,18 @@ defaults:
   -
     scope:
       path: ""
-      type: "page"
-    values:
-      layout: "page"
-      comments: false  # add comments to all blog _posts
-      social-share: false # add social media sharing buttons to all blog _posts
-  -
-    scope:
-      path: "" # any file that's not a page will be a "post" layout by default
+      type: "posts"
     values:
       layout: "post"
-      comments: true
-      social-share: true
-    paginate_path: "/_posts/page:num/"
+      comments: true  # add comments to all blog posts
+      social-share: true # add social media sharing buttons to all blog posts
+  -
+    scope:
+      path: "" # any file that's not a post will be a "page" layout by default
+    values:
+      layout: "page"
+
+
 # Exclude these files from production site
 exclude:
   - CHANGELOG.md
