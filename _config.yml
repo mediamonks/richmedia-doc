@@ -4,8 +4,9 @@
 # the initial set up you won't need to come back to this file often.
 
 # --- Required options --- #
+
 # Name of website
-title: "Display Advertising Documentation"
+title: Display Advertising Documentation
 
 # Your name to show in the footer
 author: Mient-Jan Stelling
@@ -181,10 +182,7 @@ site-css:
 
 # --- Misc --- #
 # Author detials
-author_details:
-    name: Mient-Jan Stelling
-  -
-    name: Frankie Bukenya
+
 
 
 # Ruby Date Format to show dates of posts
