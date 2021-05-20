@@ -152,7 +152,7 @@ body {
 
 and
 
-In .richmediarc:
+In `.richmediarc`:
 
 ```json
 "settings": {
@@ -221,9 +221,9 @@ Sometimes you need to set up multiple .richmediarc files in the same creative. F
 
 In this case, the most elegant solution would be two .richmediarc files. For example:
 
-`.richmediarc.en`
+`.richmediarc_en`
 
-`.richmediarc.fr`
+`.richmediarc_fr`
 
 However, there will be a lot of overlap between these two files, if you’re only changing the copy - and not the background colors, the width height, the entry files, etc.
 
@@ -231,12 +231,11 @@ Our system supports inheritance of values, by providing a ‘parent’ file from
 
 Example
 
-.richmediarc.en **(parent file)**:
+.richmediarc_en **(parent file)**:
 
 ```json
 {
   "settings": {
-  "type": "plain",
   "entry": {
     "js": "./script/main.js",
     "html": "./index.html"
@@ -254,25 +253,26 @@ Example
   }
 }
 ```
-.richmediarc.fr **(child file)**:
+.richmediarc_fr **(child file)**:
 
 ```json
 {
-  "parent": "./richmediarc.en",
+  "parent": "./.richmediarc_en",
   "content": {
     "text": "Bienvenue!",
      "cta": "Cliquez Ici"
   }
 }
 ```
-As shown in the example above, in the French .richmediarc, we only specify the parent file, and the new values for text and cta. Everything else is inherited from the parent file.
+As shown in the example above, in the French `.richmediarc`, we only specify the parent file, and the new values for text and cta. Everything else is inherited from the parent file.
 
 This method is very useful and scalable, should the need arise to add even more languages or versions.
 
 ## Feeds
-You are able to link to a Google spreadsheet, so you can build multiple units with one code base and one .richmediarc.
-When you replace API_KEY_PLACEHOLDER with your own api key <br><br> https://developers.google.com/sheets/api/guides/authorizing#APIKey
+You are able to link to a Google spreadsheet, so you can build multiple units with one code base and one `.richmediarc`.
+When you replace `API_KEY_PLACEHOLDER` with your own api key.
 
+https://developers.google.com/sheets/api/guides/authorizing#APIKey
 
 ```json
 {
