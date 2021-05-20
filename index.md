@@ -12,5 +12,7 @@ Where to start? here >> [Getting started](./getting-started.md) <<
  - FrameAnimation
  - SpreadSheets
 
-Recent updates
------
+----
+
+# Recent updates
+
