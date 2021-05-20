@@ -1,7 +1,7 @@
 ---
 layout: post
-title: richmedia-temple-server v7.2 
-subtitle: Introducing inlining svg files you dont have to use javascript any more
+title: dataBind() and why you should use it. 
+subtitle: Introducing dataBind(model, document.querySelector('body')); 
 author: mientjan
 tags: [dataBind, inline]
 comments: true
