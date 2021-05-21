@@ -1,7 +1,7 @@
 ---
 layout: post
-title: adding a bundleName so you 
-subtitle: using google spreadsheets in the feeds
+title: adding a bundleName
+subtitle: So you define how your banner is called
 author: mientjan
 tags: [dataBind, inline]
 comments: true
