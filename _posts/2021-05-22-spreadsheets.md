@@ -11,7 +11,7 @@ So you have a richmedia unit and you need generate 19 different versions with di
 
 This is now possible with `contentSource` by adding contentSource to your richmediarc you can link to a spreadsheet and use that as a content source.
 
-i created a example spreadsheet here. https://docs.google.com/spreadsheets/d/1BImA3lgTJsbVl56GQTFT-b1dx4FIoeQFBe9WLp0wWxc/edit#gid=0
+i created a example spreadsheet here. [https://docs.google.com/spreadsheets/d/1BImA3lgTJsbVl56GQTFT-b1dx4FIoeQFBe9WLp0wWxc/edit#gid=0](https://docs.google.com/spreadsheets/d/1BImA3lgTJsbVl56GQTFT-b1dx4FIoeQFBe9WLp0wWxc/edit#gid=0)
 
 as you can see it has 6 columns with the first row defining the name of the column. These rows with their content will be used as the source for 
 the content property of your richmediarc.
@@ -41,7 +41,7 @@ the content property of your richmediarc.
 }
 ```
 
-You just need to replace API_KEY placeholder with your own generated key. You can generate a key here https://developers.google.com/sheets/api/guides/authorizing#APIKey
+You just need to replace API_KEY placeholder with your own generated key. You can generate a key here [https://developers.google.com/sheets/api/guides/authorizing#APIKey](https://developers.google.com/sheets/api/guides/authorizing#APIKey)
 
 in contentSource you also see a property called tabName and filter.
 
