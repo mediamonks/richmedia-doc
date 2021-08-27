@@ -22,7 +22,7 @@ If you already have a fork, it is smart to first check if this fork is up to dat
 Go to the fork on git, my url is for example: https://github.com/mm-paulie/generator-richmedia-temple
 Make sure you are logged in. Click `Fetch upstream` in the dropdown.
 Review the details about the commits from the upstream repository, then click `Fetch and merge`.
-
+![Screenshot create a fork](./assets/img/update_the_framework_fetch_andmerge_via_ui_example.gif)
 
 #### Syncing a fork from the command line
 Before you can sync your fork with an upstream repository, you must configure a remote that points to the upstream repository in Git. Open git bash in your forked temple folder type:
@@ -88,23 +88,27 @@ C:\Users\paulie\AppData\Roaming\npm\node_modules\@mediamonks\generator-richmedia
 ```
 ![Screenshot npm link](./assets/img/update_the_framework_npm_link.gif)
 
-Create a new banner project using Yeoman:
-```  
-yo richmedia temple
-```  
-
-In this case it will actually use the generator that is locally on your computer
-
-
-
-### Example project
-
-I am going to make a fix for an issue on the generator-richmedia-temple.
+Add something to your local forked generator-richmedia-temple
+We are going to add the meta tag as described in the issue
 https://github.com/mediamonks/generator-richmedia-temple/issues/88
 
-First I use my own fork which I already had from the generator and I 'Fetch and merge' to the newest version.
-Then I make sure that the generator-richmedia-temple, is actually connected to my local fork via npm link.
+![Screenshot npm link](./assets/img/update_the_framework_edit_generator_file.gif)
 
+Change to a new project folder
+![Screenshot npm link](./assets/img/update_the_framework_show_change_0.gif)
+
+```
+cd C:\git\m\mm-paulie\test
+```
+
+Create a new banner project using Yeoman:
+```  
+yo richmedia-temple
+
+```  
+
+In this case it will actually use the generator that is locally on your computer and you will see the change in the template
+![Screenshot npm link](./assets/img/update_the_framework_show_change_0.gif)
 
 ### Commit your changes
 If you have a ticket/issue that will be closed with your amends, you can add to your commit title: `closes #xxx` and it will automatically be noticed that the ticket needs to be closed
