@@ -7,7 +7,7 @@ tags: [framework, updating, adapting, managing, git, syncing, fork, upstream, re
 comments: true
 ---
 
-#Note: This is still a wip  version of the post
+# Note: This is still a wip  version of the post
 
 ### Creating a fork
 First things first. If you want to create new code or amend existing code it's always safe to work in your own environment rather than on the master files.
@@ -15,7 +15,7 @@ In order to do this you can create a Fork from the repository you want to work o
 ![Screenshot create a fork](./assets/img/update_the_framework_create_a_fork.gif)
 
 
-###If you already have a fork and want to update it
+### If you already have a fork and want to update it
 If you already have a fork, it is smart to first check if this fork is up to date with the current master repo.
 
 ##### Syncing a fork from the web UI
@@ -66,7 +66,8 @@ Merge the changes from the upstream default branch - in this case, upstream/main
 $ git merge upstream/master
 ```  
 
-####But how do I know it works?
+
+#### How do I know it works?
 
 Use NPM link for testing your code. NPM link gives you the ability to connect a local (test) repository with your current project instead of the online repository that by default is connected.
 
@@ -96,7 +97,7 @@ In this case it will actually use the generator that is locally on your computer
 
 
 
-###Example project
+### Example project
 
 I am going to make a fix for an issue on the generator-richmedia-temple.
 https://github.com/mediamonks/generator-richmedia-temple/issues/88
@@ -105,7 +106,7 @@ First I use my own fork which I already had from the generator and I 'Fetch and 
 Then I make sure that the generator-richmedia-temple, is actually connected to my local fork via npm link.
 
 
-###Commit your changes
+### Commit your changes
 If you have a ticket/issue that will be closed with your amends, you can add to your commit title: `closes #xxx` and it will automatically be noticed that the ticket needs to be closed
 
 push the commit in your own fork
@@ -115,7 +116,7 @@ create a new npm version patch/minor/major
 Create a merge-request
 
 
-###And now I want to unlink my local package?
+### And now I want to unlink my local package?
 First deinstall it from your test project
 `C:\git\m\mediamonks\example_banner>npm unlink --no-save @mediamonks\generator-richmedia-temple'
 
